@@ -8,19 +8,19 @@ type Props = {
 }
 
 export const IconAnimated: FC<Props> = ({ waitTime = 0, width, height, children }) => {
-  const getRamdomPostion = (width : number, height: number) => {
+  const getRandomPosition = (width : number, height: number) => {
     const x = Math.floor(Math.random() * (width - 84))
     const y = Math.floor(Math.random() * (height - 84))
 
     return { x, y }
   }
 
-  const [position, setPostion] = useState(getRamdomPostion(width, height))
+  const [position, setPosition] = useState(getRandomPosition(width, height))
   const [animation, setAnimation] = useState("")
 
   useEffect(() => {
     setAnimation("")
-    setPostion(getRamdomPostion(width, height))
+    setPosition(getRandomPosition(width, height))
     const time = waitTime ? Math.floor(Math.random() * 10000) : waitTime
     setTimeout(() => {
       setAnimation("animation-icon")
@@ -28,8 +28,7 @@ export const IconAnimated: FC<Props> = ({ waitTime = 0, width, height, children 
   }, [width, height])
 
   const animationEnd = () => {
-    console.log('end')
-    setPostion(getRamdomPostion(width, height))
+    setPosition(getRandomPosition(width, height))
   }
 
   return (

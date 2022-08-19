@@ -59,8 +59,8 @@ export const Projects = () => {
         Proyectos
       </h3>
       <div className=" flex flex-wrap gap-8 ">
-        {projects.map((project) => (
-          <ProjectCard key={project.title} {...project} />
+        {projects.map((project, index) => (
+          <ProjectCard key={index} {...project} />
         ))}
       </div>
     </div>
