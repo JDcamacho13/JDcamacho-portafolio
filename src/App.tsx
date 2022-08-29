@@ -15,7 +15,7 @@ function App() {
       <div className="relative z-10 overflow-hidden ">
         <div className="max-w-screen-xl mx-auto ">
           <div className={`min-h-screen py-32 md:py-56  ${theme === "dark" ? "bg-p" : "bg-l"}`}>
-            <CardProfile />
+            <CardProfile theme={theme} />
           </div>
           <div className="min-h-[500px] my-52">
             <AboutMe />
