@@ -18,6 +18,7 @@ import { PostmanIcon } from './icons/PostmanIcon'
 import { StyledComponentsIcon } from './icons/StyledComponentsIcon'
 import { MySqlIcon } from './icons/MySqlIcon'
 import { MongoDBIcon } from './icons/MongoDBIcon'
+import { VueIcon } from './icons/VueIcon'
 
 export const Skills = () => {
   const { theme } = useTheme()
@@ -76,6 +77,9 @@ export const Skills = () => {
           </SkillCard>
           <SkillCard name='MongoDB'>
             <MongoDBIcon />
+          </SkillCard>
+          <SkillCard name='Vue.js'>
+            <VueIcon width={56} height={56} />
           </SkillCard>
         </div>
       </div>

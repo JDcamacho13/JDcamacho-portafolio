@@ -6,6 +6,7 @@ import { ReactIcon } from "./icons/ReactIcon"
 import { CssIcon } from "./icons/CssIcon"
 import { StyledComponentsIcon } from "./icons/StyledComponentsIcon"
 import { NodeIcon } from "./icons/NodeIcon"
+import { VueIcon } from "./icons/VueIcon"
 
 const size = {
   width: "32px",
@@ -49,6 +50,18 @@ const projects: Array<Project> = [
     ],
     linkRepo: "https://github.com/JDcamacho13/home-cloud",
     linkDemo: "https://home-cloud.vercel.app/"
+  },
+  {
+    title: "Coin market",
+    description: <p>Pequeña <span className="font-bold text-gray-800 dark:text-slate-300">app</span> Para ver el precio de diferentes crypto moneda.</p>,
+    image: "./coin-market-project.png",
+    technologies: [
+      <JsIconBg color="#FFCC15" {...size}  />,
+      <VueIcon {...size} />,
+      <CssIcon {...size} color="#1572B6" />
+    ],
+    linkRepo: "https://github.com/JDcamacho13/coin-market",
+    linkDemo: "https://coin-market-sigma.vercel.app/"
   }
 ]
 
